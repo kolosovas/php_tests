@@ -40,6 +40,9 @@ $sql = "SELECT `Data`,
 		GROUP BY `ACNT_ID` 
 		HAVING  `Data`<STR_TO_DATE('$data_end', '%Y-%m-%d');";
 		
+
+		branch1
+
 		
 		$sql = "SELECT `Name` as serviceName,
                @SUMMA_START:=SUM( case when `Data` < STR_TO_DATE('$data_start', '%Y-%m-%d') and `PAY_ID` != '3' then `Summa` else 0 end), 
@@ -59,4 +62,5 @@ $sql = "SELECT `Data`,
 		HAVING  `Data` <= STR_TO_DATE('$data_end', '%Y-%m-%d');";
 		
 		
-		
+<<<<<<< HEAD
+
